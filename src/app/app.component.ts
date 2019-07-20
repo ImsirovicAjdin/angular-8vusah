@@ -28,6 +28,18 @@ So we're binding from the Component Class property ('') to the element property 
 <img src={{ product.imageUrl }}
 <img src='http://openclipart.org/{{product.imageUrl}}'>
 
+Event Binding
+################################################
+
+A component listens for user actions using event binding inside the template, for example:
+
+<button (click)='toggleImage()'>
+          (1)       (2)
+
+(1), (click) - the name of the bound event is enclosed in parentheses - this is the ***target event***
+(2), '' - ***template statement***
+
+If the defined event occurs, the toggleImage() is executed, calling the method in the Class. 
 
 
 */
