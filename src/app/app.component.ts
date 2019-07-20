@@ -54,6 +54,22 @@ toggleImage(): void {
   this.showImage = !this.showImage;
 }
 
+Two-way Binding
+###############################################
+<input [(ngModel)]='listFilter'>
+
+export class ListComponent {
+  listFilter: string = 'cart';
+}
+
+[] = property binding: we're binding from the component class property ('listFilter') to the element property [ngModel]
+
+AND
+
+() = event binding: we're binding an event of user entering data - (ngModel) - back to the class property ('listFilter') 
+
+[()] - banana in a box
+
 
 
 */
