@@ -41,5 +41,19 @@ A component listens for user actions using event binding inside the template, fo
 
 If the defined event occurs, the toggleImage() is executed, calling the method in the Class. 
 
+Toggling a button:
+##############################################
+
+in template:
+<button class="btn btn-primary" (click)='toggleImage()'> 
+  {{ showImage ? 'Hide' : 'Show' }} Image
+</button>
+
+in class:
+toggleImage(): void {
+  this.showImage = !this.showImage;
+}
+
+
 
 */
